@@ -543,6 +543,7 @@ class Downshift extends Component {
           onKeyDown: composeEventHandlers(onKeyDown, this.button_handleKeyDown),
         }
     return {
+      type: 'button',
       role: 'button',
       'aria-label': isOpen ? 'close menu' : 'open menu',
       'aria-expanded': isOpen,
